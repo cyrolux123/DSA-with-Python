@@ -11,12 +11,13 @@ def binary_search(arr, target):
         if (arr[mid] == target):
             return mid
         
-        if (arr[mid] < target):
+        elif (arr[mid] < target):
             start = mid + 1
-        else:
+
+        elif (arr[mid] > target):
             end = mid - 1
     
-    
+    return -1
 
 sorted_list = [10, 20, 30, 40, 50, 60]
 target = 40
