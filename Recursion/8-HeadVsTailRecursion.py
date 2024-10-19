@@ -20,6 +20,6 @@ def factTail(n, k = 1):
         return k
     
     k = n * k
-    return factTail(n-1, k)
+    return factTail(n-1, k) 
 
 print(factTail(5))
